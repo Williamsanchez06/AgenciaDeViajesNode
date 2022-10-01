@@ -46,7 +46,6 @@ const paginaViajes =  async (req, res) => {
 
     try {
         const viajes =  await Viaje.findAll();
-        console.log(viajes);
 
         res.render('viajes', {
             pagina: 'Proximos Viajes',
