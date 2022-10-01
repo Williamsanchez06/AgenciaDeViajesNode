@@ -1,0 +1,34 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de janeiro
+        em aventuira
+
+
+block contenido 
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p non. Sed sollicitudin erat quis sapien eleifend faucibus. Praesent egestas tortor at congue sagittis. Vestibulum faucibus, lectus sed laoreet volutpat, ligula sapien tempor augue, eget porta enim purus id sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pretium quam at purus euismod, at sodales velit maximus.
+                p Ut faucibus sem nulla, a posuere mauris bibendum non. Vivamus nec molestie ipsum. In iaculis leo eu sem maximus ultricies. Sed mattis lacinia justo sit amet vulputate. Nulla tempus lacus non massa euismod, nec ultrices justo cursus. Sed blandit mauris vitae est facilisis iaculis. Praesent at sodales libero, vitae venenatis dolor. Maece.
+
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen nosotros" class="img-fluid")
+
+        include ./layout/bloqueViajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje de Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo del 2022
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+            include ./layout/bloqueTestimoniales
+            
